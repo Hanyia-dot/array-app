@@ -1,6 +1,6 @@
 const newAdviceBtn = document.querySelector("button");
 const cleanBtn = document.querySelector("#clean");
-const showAdvice= document.querySelector("#showAdvice");
+const showAdvice = document.querySelector("#showAdvice");
 const showOptionBtn = document.querySelector("#showOption");
 const h1 = document.querySelector('h1');
 
@@ -24,7 +24,12 @@ const cleaning = (e) => {
 
 }
 
+const adviceGenerator = () => {
+    const randomNumber = Math.floor(Math.random() * advices.length);
+    h1.textContent = `Moja rada to: ${advices[randomNumber]}`;
 
+    
+}
 
 
 
@@ -32,7 +37,7 @@ const cleaning = (e) => {
 
 newAdviceBtn.addEventListener('click', addAdvice);
 cleanBtn.addEventListener('click', cleaning);
-
+showAdvice.addEventListener('click', adviceGenerator);
 
 
 
