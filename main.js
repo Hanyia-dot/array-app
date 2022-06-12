@@ -1,7 +1,7 @@
-const newAdviceBtn = document.querySelector("button");
-const cleanBtn = document.querySelector("#clean");
-const showAdviceBtn = document.querySelector("#showAdvice");
-const showOptionBtn = document.querySelector("#showOptions");
+const newAdviceBtn = document.querySelector('.add');
+const cleanBtn = document.querySelector('.clean');
+const showAdviceBtn = document.querySelector('.showAdvice');
+const showOptionBtn = document.querySelector('.showOptions');
 const h1 = document.querySelector('h1');
 const div = document.querySelector('div');
 
@@ -29,7 +29,7 @@ const adviceGenerator = () => {
 }
 
 const printOptions = () => {
-    alert(`wszystkie zapisane możliwości to: ${advices}`);
+    alert(advices.join(`, `));
 
 }
 
